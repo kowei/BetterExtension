@@ -14,7 +14,7 @@
 		4A5A61F726291B0E002B74CF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5A61F626291B0E002B74CF /* Cocoa.framework */; };
 		4A5A61FC26291B0E002B74CF /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5A61FB26291B0E002B74CF /* SourceEditorExtension.swift */; };
 		4A5A61FE26291B0E002B74CF /* BetterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5A61FD26291B0E002B74CF /* BetterCommand.swift */; };
-		4A5A620326291B0E002B74CF /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4A5A61F426291B0E002B74CF /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4A5A620326291B0E002B74CF /* Better Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4A5A61F426291B0E002B74CF /* Better Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4A5A620A262927BA002B74CF /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5A61F826291B0E002B74CF /* XcodeKit.framework */; };
 		4A5A620B262927BA002B74CF /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5A61F826291B0E002B74CF /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				4A5A620326291B0E002B74CF /* Extension.appex in Embed App Extensions */,
+				4A5A620326291B0E002B74CF /* Better Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		4A5A61E626288E1F002B74CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A5A61E826288E1F002B74CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A5A61E926288E1F002B74CF /* BetterExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BetterExtension.entitlements; sourceTree = "<group>"; };
-		4A5A61F426291B0E002B74CF /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5A61F426291B0E002B74CF /* Better Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Better Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5A61F626291B0E002B74CF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4A5A61F826291B0E002B74CF /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		4A5A61FB26291B0E002B74CF /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				4A5A61DC26288E1D002B74CF /* BetterExtension.app */,
-				4A5A61F426291B0E002B74CF /* Extension.appex */,
+				4A5A61F426291B0E002B74CF /* Better Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 			);
 			name = Extension;
 			productName = Extension;
-			productReference = 4A5A61F426291B0E002B74CF /* Extension.appex */;
+			productReference = 4A5A61F426291B0E002B74CF /* Better Extension.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -456,7 +456,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tutor.kc.BetterExtension.Extension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Better Extension";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -477,7 +477,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tutor.kc.BetterExtension.Extension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Better Extension";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};

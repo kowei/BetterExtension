@@ -27,7 +27,7 @@ class BetterCommand: NSObject, XCSourceEditorCommand {
 
     private func remark(leadingKey: String, source: XCSourceTextBuffer) {
         guard let selection = source.selections.firstObject as? XCSourceTextRange else {
-            //print("No selection")
+            print("No selection")
             return
         }
         var start = 0, end = 0
@@ -57,12 +57,12 @@ class BetterCommand: NSObject, XCSourceEditorCommand {
 
     private func insertHelloWorl(source: XCSourceTextBuffer) {
         guard let selection = source.selections.firstObject as? XCSourceTextRange else {
-            //print("No selection")
+            print("No selection")
             return
         }
 
-        //print(selection.start.line, selection.start.column)
-        //print(selection.end.line, selection.end.column)
+        print(selection.start.line, selection.start.column)
+        print(selection.end.line, selection.end.column)
 
         source.lines.insert(indentation(line: source.lines[selection.start.line] as! String) + "print(\"Hello World\")", at: selection.start.line + 1)
     }
